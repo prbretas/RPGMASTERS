@@ -1,0 +1,92 @@
+body {
+    font-family: "MedievalSharp", cursive;
+    background: url("https://www.transparenttextures.com/patterns/wood-pattern.png");
+    text-align: center;
+    
+    /*******RESET*********/
+    margin: 0; 
+    padding: 0;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+
+
+    /**** PADROES *******/
+    /******** ALTERA A COR DO BACKGROUND CONTRASTRANDO COM A IMG PATTERN *****************/
+    background-color: #2c1c0d;
+    /*COR DA FONTE PADRAO*/
+    color: #f3eacb;
+
+  }
+
+
+  /*********** CABEÇALHO ******************/
+  header {
+    background-color: #2c1c0d;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    filter:  drop-shadow(0 0 5px rgb(0, 0, 0));
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  nav a {
+    color: #f3eacb;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #ffd700;
+  }
+  
+  .container {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  /***********FORMATAÇÃO DE TEXTOS********/
+  
+  h3{
+    font-size: 3rem;
+    filter: drop-shadow(0 0 10px white);
+  }
+  
+
+  p{
+    font-size: 1.3rem;
+  }
+  /*****************************************/
+
+  .alerta{
+    color: red;
+    font: bold;
+    font-family: Arial, Helvetica, sans-serif;
+
+  }  
+  /****************** RODAPE ************************/
+  footer {
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #d6cdb9;
+  }
+
+  /*************CONFIGURAÇÃO PADRAO DAS SEÇÕES *******************************/
+  section {
+
+    padding: 20px;
+    border:  20px solid rgba(255, 255, 255, 0.071);
+    display: flex;
+    align-items: center;
+    /*flex-direction:  column;*/
+    justify-content: space-evenly;
+    
+  }
