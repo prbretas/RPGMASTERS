@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./common-styles.css">
     <link rel="stylesheet" href="./style-rules.css" />
+    <!-- Fonte medieval -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap"
+      rel="stylesheet"
+    />
     <title>RPG D&D Regras</title>
   </head>
   <body>
@@ -13,39 +19,43 @@
       <nav>
         <a href="./index.html">Home</a>
         <a href="./Rules.html">Regras</a>
-        <a href="./Ficha.html">Ficha</a>
+        <a href="./ficha.html">Ficha</a>
       </nav>
     </header>
 
-    <section id="Dados">
-      <h1>🎲 Gerador de Dados de RPG 🎲</h1>
+    <section id="sectionDados">
+      <div class="divDados">
+        <h1>🎲 Gerador de Dados de RPG 🎲</h1>
+        <div id="divBotoes">
+          <div class="dice-buttons">
+            <button onclick="selectDice(4)">🎲d4</button>
+            <button onclick="selectDice(6)">🎲d6</button>
+            <button onclick="selectDice(8)">🎲d8</button>
+            <br>
+            <button onclick="selectDice(10)">🎲d10</button>
+            <button onclick="selectDice(12)">🎲d12</button>
+            <button onclick="selectDice(20)">🎲d20</button>
+            <button onclick="selectDice(100)">🎲d100</button>
+          </div>
+<br>
+          <div>
+            <label for="rolls">Qtd. de Rolagens:</label>
+            <input type="number" id="rolls" min="1" value="1" />
+          </div>
 
-      <div class="dice-buttons">
-        <button onclick="selectDice(4)">🎲d4</button>
-        <button onclick="selectDice(6)">🎲d6</button>
-        <button onclick="selectDice(8)">🎲d8</button>
-        <button onclick="selectDice(10)">🎲d10</button>
-        <button onclick="selectDice(12)">🎲d12</button>
-        <button onclick="selectDice(20)">🎲d20</button>
-        <button onclick="selectDice(100)">🎲d100</button>
+          <button id="rollBtn" onclick="rollDice()">🎲 Gerar</button>
+
+          <div id="result">Selecione um dado e clique em "Gerar"</div>
+        </div>
       </div>
-
-      <div>
-        <label for="rolls">Qtd. de Rolagens:</label>
-        <input type="number" id="rolls" min="1" value="1" />
-      </div>
-
-      <button id="rollBtn" onclick="rollDice()">🎲 Gerar</button>
-
-      <div id="result">Selecione um dado e clique em "Gerar"</div>
     </section>
 
-    <section id="Rules">
+    <section id="sectionRules">
       <h1>LIVROS e Regras</h1>
 
-      <p>Livro do Mestre</p>
+      <h3>Livro do Mestre</h3>
       <iframe
-        style="width: 700px; height: 425px"
+        class="iframe-books"
         src="https://online.anyflip.com/czfqj/pdai/index.html"
         seamless="seamless"
         scrolling="no"
@@ -53,9 +63,9 @@
         allowtransparency="true"
         allowfullscreen="true"
       ></iframe>
-      <p>Livro do Jogador</p>
+      <h3>Livro do Jogador</h3>
       <iframe
-        style="width: 700px; height: 425px"
+        class="iframe-books"
         src="https://online.anyflip.com/iysif/dldz/index.html"
         seamless="seamless"
         scrolling="no"
@@ -63,9 +73,9 @@
         allowtransparency="true"
         allowfullscreen="true"
       ></iframe>
-      <p>Livro dos Monstros</p>
+      <h3>Livro dos Monstros</h3>
       <iframe
-        style="width: 700px; height: 425px"
+        class="iframe-books"
         src="https://online.anyflip.com/iyqz/ggdt/index.html"
         seamless="seamless"
         scrolling="no"

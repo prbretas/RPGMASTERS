@@ -1,31 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="./script.js" defer></script>
-    <link rel="stylesheet" href="./style.css">
-    <title>RPG D&D Regras</title>
-</head>
-<body>
-    
+    <link rel="stylesheet" href="./common-styles.css" />
+    <link rel="stylesheet" href="./style-ficha.css" />
+    <title>RPG D&D Ficha</title>
+    <!-- Fonte medieval -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <h1>🛡️ RPG Masters</h1>
-        <nav>
-          <a href="./index.html">Home</a>
-          <a href="./Rules.html">Regras</a>
-          <a href="./Ficha.html">Ficha</a>
-        </nav>
-      </header>
+      <h1>🛡️ RPG Masters</h1>
+      <nav>
+        <a href="./index.html">Home</a>
+        <a href="./Rules.html">Regras</a>
+        <a href="./ficha.html">Ficha</a>
+      </nav>
+    </header>
 
-    <h1>FICHA DO PERSONAGEM</h1>
-    <p>Você pode alterar a ficha e salvar em seu dispositivo</p>
-    <p>Cuidado para não atualizar a página, pois perderá todos os dados</p>
-    <p>SALVE SEU ARQUIVO ANTES DE ATUALIZAR/OU SAIR DA PAGINA</p>
-    <iframe src="./files/Ficha Oficial D&D 5E Editável.pdf" frameborder="0" width="1024" height="700"></iframe>
+    <section class="sectionChar">
+      <div>
+        <h1>FICHA DO PERSONAGEM</h1>
+        <p class="alerta">Você pode alterar a ficha e salvar em seu dispositivo</p>
+        <p class="alerta">Cuidado para não atualizar a página, pois perderá todos os dados</p>
+        <p class="alerta">SALVE SEU ARQUIVO ANTES DE ATUALIZAR/OU SAIR DA PAGINA</p>
+        <iframe
+          src="./files/Ficha Oficial D&D 5E Editável.pdf"
+          frameborder="0"
+          width="1024"
+          height="700"
+        ></iframe>
+      </div>
+    </section>
 
-
-
-
-</body>
+    <footer>&copy; 2025 RPG Masters. Todos os direitos reservados.</footer>
+  </body>
 </html>
