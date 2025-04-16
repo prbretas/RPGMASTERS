@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>RPG D&D Regras</title>
+    <!-- Fonte medieval -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- SwiperJS CSS para o carrossel -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <style></style>
+  </head>
+  <body>
+    <ul>
+      <li class="menu">
+        <a href="./main.html"><p>Home</p></a>
+      </li>
+      <li class="menu">
+        <a href="./Rules.html"><p>Regras</p></a>
+      </li>
+      <li class="menu">
+        <a href="./Ficha.html"><p>Ficha</p></a>
+    </li>
+    </ul>
+
+    <header>
+      <h1>🛡️ RPG Épico</h1>
+      <nav>
+        <a href="#">Início</a>
+        <a href="#">Gerador de Dados</a>
+        <a href="#">Histórias</a>
+        <a href="#">Personagens</a>
+        <a href="#">Contato</a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <h2>🌟 Bem-vindo ao mundo da aventura!</h2>
+      <p>Explore terras mágicas, enfrente dragões e crie sua própria lenda.</p>
+
+      <!-- Carrossel -->
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="https://images.unsplash.com/photo-1620422492729-89ae68d8f61b?fit=crop&w=900&q=80"
+              alt="RPG 1"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://images.unsplash.com/photo-1610878180933-0d86052b24a0?fit=crop&w=900&q=80"
+              alt="RPG 2"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://images.unsplash.com/photo-1617054009840-bf8478fdd8c1?fit=crop&w=900&q=80"
+              alt="RPG 3"
+            />
+          </div>
+        </div>
+        <!-- Navegação -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <footer>&copy; 2025 RPG Épico. Todos os direitos reservados.</footer>
+
+    <!-- SwiperJS JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        loop: true,
+        autoplay: {
+          delay: 3000,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>

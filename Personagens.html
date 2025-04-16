@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>RPG D&D Regras</title>
+</head>
+<body>
+    
+    <ul>
+        <li class="menu">
+            <a href="./main.html"><p>Home</p></a>
+        </li>
+        <li class="menu">
+            <a href="./Rules.html"><p>Regras</p></a>
+        </li>
+        <li class="menu">
+            <a href="./Personagens.html"><p>Personagens</p></a>
+        </li>
+        <li class="menu">
+            <a href="./Ficha.html"><p>Ficha</p></a>
+        </li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container">
+        <h1>Criador de Personagem D&D 5e</h1>
+        <div class="form-personagem">
+            <div class="form-group">
+                <label for="nome">Nome do Personagem</label>
+                <input type="text" id="nome" name="nome">
+            </div>
+
+            <div class="form-group">
+                <label for="raca">Raça</label>
+                <select id="raca" name="raca">
+                    <option value="">Selecione...</option>
+                    <option value="anao">Anão</option>
+                    <option value="elfo">Elfo</option>
+                    <option value="halfling">Halfling</option>
+                    <option value="humano">Humano</option>
+                    <option value="draconato">Draconato</option>
+                    <option value="gnomo">Gnomo</option>
+                    <option value="meio-elfo">Meio-Elfo</option>
+                    <option value="meio-orc">Meio-Orc</option>
+                    <option value="tiefling">Tiefling</option>
+
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="classe">Classe</label>
+                <select id="classe" name="classe">
+                    <option value="">Selecione...</option>
+                    <option value="barbaro">Bárbaro</option>
+                    <option value="bardo">Bardo</option>
+                    <option value="bruxo">Bruxo</option>
+                    <option value="clerigo">Clérigo</option>
+                    <option value="druida">Druida</option>
+                    <option value="feiticeiro">Feiticeiro</option>
+                    <option value="guerreiro">Guerreiro</option>
+                    <option value="ladino">Ladino</option>
+                    <option value="mago">Mago</option>
+                    <option value="monge">Monge</option>
+                    <option value="paladino">Paladino</option>
+                    <option value="patrulheiro">Patrulheiro</option>
+                </select>
+            </div>
+
+
+            <div class="form-group">
+                <label for="antecedente">Antecedente</label>
+                <select id="antecedente" name="antecedente">
+                    <option value="">Selecione...</option>
+                    <option value="acólito">Acólito</option>
+                    <option value="artesão da Guilda">Artesão da Guilda</option>
+                    <option value="artista">Artista</option>
+                    <option value="charlatão">Charlatão</option>
+                    <option value="criminoso">Criminoso</option>
+                    <option value="ermitão">Ermitão</option>
+                    <option value="forasteiro">Forasteiro</option>
+                    <option value="herói do povo">Herói do Povo</option>
+                    <option value="marinheiro">Marinheiro</option>
+                    <option value="nobre">Nobre</option>
+                    <option value="órfão">Órfão</option>
+                    <option value="sábio">Sábio</option>
+                    <option value="soldado">Soldado</option>
+                    <option value="soldado">Outro</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="antecedente" ></label>
+                <input type="text" id="antecedente" name="antecedente">
+            </div>
+
+            <div class="form-group">
+                <label for="divindade">Divindade</label>
+                <select id="divindade" name="divindade">
+                    <option value="">Selecione...</option>
+                    <option value="acólito">Acólito</option>
+                    <option value="artesão da Guilda">Artesão da Guilda</option>
+                    <option value="artista">Artista</option>
+                </select>
+            </div>
+
+            <div class="form-group abilities-grid">
+                <label for="forca">Força</label>
+                <input type="number" id="forca" name="forca" value="10">
+
+                <label for="destreza">Destreza</label>
+                <input type="number" id="destreza" name="destreza" value="10">
+
+                <label for="constituicao">Constituição</label>
+                <input type="number" id="constituicao" name="constituicao" value="10">
+
+                <label for="inteligencia">Inteligência</label>
+                <input type="number" id="inteligencia" name="inteligencia" value="10">
+
+                <label for="sabedoria">Sabedoria</label>
+                <input type="number" id="sabedoria" name="sabedoria" value="10">
+
+                <label for="carisma">Carisma</label>
+                <input type="number" id="carisma" name="carisma" value="10">
+            </div>
+
+            <div class="form-group">
+                <label for="pontos_vida">Pontos de Vida</label>
+                <input type="number" id="pontos_vida" name="pontos_vida">
+            </div>
+
+            <div class="form-group">
+                <label for="tendencia">Tendência</label>
+                <select id="tendencia" name="tendencia">
+                    <option value="">Selecione...</option>
+                    <option value="leal_bom">Leal e Bom</option>
+                    <option value="neutro_bom">Neutro e Bom</option>
+                    <option value="caotico_bom">Caótico e Bom</option>
+                    <option value="leal_neutro">Leal e Neutro</option>
+                    <option value="neutro">Neutro</option>
+                    <option value="caotico_neutro">Caótico e Neutro</option>
+                    <option value="leal_mau">Leal e Mau</option>
+                    <option value="neutro_mau">Neutro e Mau</option>
+                    <option value="caotico_mau">Caótico e Mau</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="historia">História do Personagem</label>
+                <textarea id="historia" name="historia" rows="4"></textarea>
+            </div>
+
+            <button type="button" onclick="gerarFicha()">Gerar Ficha</button>
+        </div>
+
+        <div id="ficha" class="ficha-personagem" style="display: none;">
+            <h2>Ficha de Personagem</h2>
+            <div class="section">
+                <label>Nome:</label>
+                <span id="ficha-nome"></span>
+            </div>
+            <div class="section">
+                <label>Classe:</label>
+                <span id="ficha-classe"></span>
+            </div>
+            <div class="section">
+                <label>Raça:</label>
+                <span id="ficha-raca"></span>
+            </div>
+            <div class="section">
+                <label>Antecedente:</label>
+                <span id="ficha-antecedente"></span>
+            </div>
+            <div class="section">
+                <label>Força:</label>
+                <span id="ficha-forca"></span>
+            </div>
+            <div class="section">
+                <label>Destreza:</label>
+                <span id="ficha-destreza"></span>
+            </div>
+            <div class="section">
+                <label>Constituição:</label>
+                <span id="ficha-constituicao"></span>
+            </div>
+            <div class="section">
+                <label>Inteligência:</label>
+                <span id="ficha-inteligencia"></span>
+            </div>
+            <div class="section">
+                <label>Sabedoria:</label>
+                <span id="ficha-sabedoria"></span>
+            </div>
+            <div class="section">
+                <label>Carisma:</label>
+                <span id="ficha-carisma"></span>
+            </div>
+            <div class="section">
+                <label>Pontos de Vida:</label>
+                <span id="ficha-pontos_vida"></span>
+            </div>
+            <div class="section">
+                <label>Tendência:</label>
+                <span id="ficha-tendencia"></span>
+            </div>
+            <div class="section">
+                <label>História:</label>
+                <span id="ficha-historia"></span>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function gerarFicha() {
+            document.getElementById('ficha-nome').innerText = document.getElementById('nome').value;
+            document.getElementById('ficha-classe').innerText = document.getElementById('classe').value;
+            document.getElementById('ficha-raca').innerText = document.getElementById('raca').value;
+            document.getElementById('ficha-antecedente').innerText = document.getElementById('antecedente').value;
+            document.getElementById('ficha-forca').innerText = document.getElementById('forca').value;
+            document.getElementById('ficha-destreza').innerText = document.getElementById('destreza').value;
+            document.getElementById('ficha-constituicao').innerText = document.getElementById('constituicao').value;
+            document.getElementById('ficha-inteligencia').innerText = document.getElementById('inteligencia').value;
+            document.getElementById('ficha-sabedoria').innerText = document.getElementById('sabedoria').value;
+            document.getElementById('ficha-carisma').innerText = document.getElementById('carisma').value;
+            document.getElementById('ficha-pontos_vida').innerText = document.getElementById('pontos_vida').value;
+            document.getElementById('ficha-tendencia').innerText = document.getElementById('tendencia').value;
+            document.getElementById('ficha-historia').innerText = document.getElementById('historia').value;
+
+            document.getElementById('ficha').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>

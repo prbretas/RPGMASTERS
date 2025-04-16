@@ -1,0 +1,86 @@
+/*************************************************/
+
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background-color: #fff;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #5a5a5a;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #777;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* Garante que padding e borda não aumentem o tamanho total */
+}
+
+.abilities-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para a ficha de personagem */
+.ficha-personagem {
+    border: 2px solid #000;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.ficha-personagem h2 {
+    text-align: center;
+}
+
+.ficha-personagem .section {
+    margin-bottom: 10px;
+}
+
+.ficha-personagem label {
+    font-weight: bold;
+}
+
+
+
+/****************************************************/
