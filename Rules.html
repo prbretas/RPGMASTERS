@@ -11,6 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap"
       rel="stylesheet"
     />
+    
+    <script src="./script.js" defer></script>
     <title>RPG D&D Regras</title>
   </head>
   <body>
@@ -18,10 +20,12 @@
       <h1>🛡️ RPG Masters</h1>
       <nav>
         <a href="./index.html">Home</a>
-        <a href="./Rules.html">Regras</a>
+        <a href="./rules.html">Regras</a>
+        <a href="./historia.html">História</a>
         <a href="./ficha.html">Ficha</a>
       </nav>
     </header>
+
 
     <section id="sectionDados">
       <div class="divDados">
@@ -37,7 +41,7 @@
             <button onclick="selectDice(20)">🎲d20</button>
             <button onclick="selectDice(100)">🎲d100</button>
           </div>
-<br>
+          <br>
           <div>
             <label for="rolls">Qtd. de Rolagens:</label>
             <input type="number" id="rolls" min="1" value="1" />
@@ -46,6 +50,7 @@
           <button id="rollBtn" onclick="rollDice()">🎲 Gerar</button>
 
           <div id="result">Selecione um dado e clique em "Gerar"</div>
+          <img src="./files/d&d-dnd.gif" alt="">
         </div>
       </div>
     </section>
@@ -84,45 +89,5 @@
         allowfullscreen="true"
       ></iframe>
     </section>
-
-    <script>
-      let selectedDice = 0;
-
-      function selectDice(sides) {
-        selectedDice = sides;
-        document.getElementById(
-          "result"
-        ).textContent = `Dado selecionado: d${sides}`;
-      }
-
-      function rollDice() {
-        if (selectedDice === 0) {
-          document.getElementById("result").textContent =
-            "Por favor, selecione um dado primeiro.";
-          return;
-        }
-
-        const numRolls = parseInt(document.getElementById("rolls").value);
-        if (isNaN(numRolls) || numRolls < 1) {
-          document.getElementById("result").textContent =
-            "Digite um número válido de rolagens.";
-          return;
-        }
-
-        let results = [];
-        let total = 0;
-
-        for (let i = 0; i < numRolls; i++) {
-          const result = Math.floor(Math.random() * selectedDice) + 1;
-          results.push(result);
-          total += result;
-        }
-
-        document.getElementById("result").innerHTML =
-          `<p>Resultados do d${selectedDice} (${numRolls}x): ${results.join(
-            ", "
-          )}</p>` + (numRolls > 1 ? `<p>Soma total: ${total}</p>` : "");
-      }
-    </script>
   </body>
 </html>
